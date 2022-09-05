@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,700;1,200;1,300&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/*font-family: 'Mulish', sans-serif;
+font-family: 'Niramit', sans-serif;*/
+
+
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    background-color: rgb(252, 235, 235);
+}
+
+/*Nav*/
+
+.navBar{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+}
+
+.navBar .menu{
+    grid-column: 2;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(22, 69, 129);
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logoWeb{
+    grid-column: 1;
+    width: 100px;
+    height: 100px;
+}
+
+.logoPortfolio h1{
+    margin-left: 20px;
+    font-size: 20px;
+    color: rgb(22, 69, 129);
+    text-shadow: 1px 1px gray;
+}
+
+/*section*/
+
+.seccion {
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    grid-template-rows: repeat(4, 100px);
+}
+
+
+.imgPresentacion {
+    grid-column: 1;
+    grid-row: 1 / 2;
+    margin-left: 20px;
+}
+
+.imgPresentacion img {
+    width: 510px;
+    height: 450px;
+}
+
+.seccion .textoPresentacion{
+    font-family: 'Niramit', sans-serif;
+    font-size: 4rem;
+    color: rgb(22, 69, 129);
+    align-items: center;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+
+
+.seccion .textoPresentacion p{
+    font-size: 2rem;
+    color: rgb(28, 45, 69);
+}
+
+
+
+/*Redes*/
+
+.redesIconos{
+    display: flex;
+   grid-row: 4;
+   grid-column: 2;
+justify-content: space-evenly;
+}
+
+.iconify {
+    width: 40px;
+    height: 40px;
+}
+
+.instagram img{
+    width: 40px;
+    height: 40px;
+    
+}
+
+
+
+/*Sobre mi*/
+
+/*Imagen Diseño*/
+
+.imgDiseñador img{
+    width: 230px;
+    height: 230px;
+}
+
+.imgDiseñador {
+    grid-column: 8 / 9;
+    grid-row: 2 / 3;
+}
+
+/*Texto Sobre mi*/
+
+.textoSobreMi {
+    grid-row: 2 / 3;
+    grid-column: 2 / 7;
+}
+
+.textoSobreMi h3 {
+    font-family: 'Niramit', sans-serif;
+    font-size: 3rem;
+    color: rgb(22, 69, 129);
+    align-items: center;
+}
+
+.textoSobreMi p {
+    font-family: 'Niramit', sans-serif;
+    font-size: 16px;
+    color: rgb(28, 45, 69);
+}
+
+.seccionSobreMi {
+    display: grid;
+    grid-template-columns: repeat(9, 100px);
+    grid-template-rows: repeat(4, 100px);
+}
+
+@media(max-width: 768px){
+    .seccion {
+        display: block;
+        text-align: center;
+    }
+    }
+@media(max-width: 480px) {
+    .seccion {
+        display: block;
+        text-align: center;
+    }
+    .iconify {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .instagram img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu li a{
+        font-size: 12px;
+    }
+}
